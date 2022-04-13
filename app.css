@@ -9,10 +9,7 @@ h4 {
   color: #606770;
   text-align: center;
 }
-.corpo {
-  width: 100%;
-  height: 400px;
-}
+
 img {
   display: block;
   max-width: 100%;
@@ -21,7 +18,7 @@ img {
 }
 
 p {
-  max-width: 250px;
+  max-width: 100%;
 }
 input {
   max-width: 100%;
@@ -30,7 +27,12 @@ input {
   border-radius: 6px;
   border: 1px solid #dddfe2;
 }
-
+.entrar {
+  font-size: 16px;
+  text-align: center;
+  padding-right: 10px;
+  margin: 15px;
+}
 .grid {
   max-width: 100%;
   height: 100%;
@@ -39,42 +41,55 @@ input {
   flex-wrap: wrap;
   padding-top: 100px;
   align-items: center;
+  align-items: stretch;
+  align-content: stretch;
 }
 
 .gridcol1 {
   flex-wrap: wrap;
+  flex-grow: 1;
   flex: 1;
   margin-left: 50px;
   background-color: white;
   width: 1450px;
-  height: 437px;
+  height: 514px;
   padding: 20px;
   border-radius: 8px;
+  align-items: center;
 }
 .img-text {
   margin-top: 100px;
 }
 
 .gridcol2 {
+  display: block;
   flex-wrap: wrap;
+  flex-grow: 1;
   flex: 1;
   margin-left: 10px;
   margin-right: 50px;
   background-color: rgba(234, 238, 250, 1);
   padding: 90px;
   max-width: 350px;
+  height: 380px;
   border-radius: 8px;
 }
 .form1 {
-  text-align: justify;
-  max-width: 100%;
+  position: relative;
+  margin-top: -35px;
+  text-align: center;
 }
 
 .form2 {
-  align-items: center;
+  position: relative;
+  max-width: 100%;
   background-color: rgba(234, 238, 250, 1);
   border-radius: 8px;
-  max-width: 500px;
-  margin: 2px;
+  max-width: 100%;
+  top: 40px;
+  align-items: center;
   text-align: center;
+}
+.elem2 {
+  margin-top: 40px;
 }
